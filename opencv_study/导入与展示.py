@@ -1,0 +1,16 @@
+import cv2
+print(cv2.__version__)
+imga = cv2.imread('2025-10-19 005056.png')
+cv2.imshow('image',imga)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+print(imga.shape)
+imgb= cv2.imread('2025-10-19 005056.png',cv2.IMREAD_GRAYSCALE)
+cv2.imshow('imgb',imgb)
+cv2.waitKey(2000)
+cv2.destroyAllWindows()
+print(imgb.shape)
+# def cv_show(name,img):
+#     cv2.imshow(name,img)
+#     cv2.waitKey(0)
+#     cv2.destroyAllWindows()
